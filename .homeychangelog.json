@@ -1,5 +1,8 @@
 {
   "0.1.0": {
     "en": "Support for lights and plug, onoff and dim only."
+  },
+  "0.1.1": {
+    "en": "First version, support for lights and plug."
   }
 }
