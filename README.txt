@@ -9,7 +9,9 @@ Discover the benefits of Lidl Smart Home
 * Good for the environment and your wallet
 
 PLEASE OBSERVE!
+Known issues:
 Until further notice the RGB lights only support on/off and dim (white temperature and colors will be added when know issues are resolved).
+Door / Windows Sensor may not enroll to Homey and if so will not send reports. Re-Pair might help.
 
 Supported devices:
 - Smart Plug, without metering
@@ -33,7 +35,8 @@ Supported devices:
     _TZ3000_el5kt5im / TS0502A (Lidl)
 - Christmas Lights
     _TZE200_s8gkrkxk / TS0601 (Lidl)
-
+- Door / Windows Sensor
+    _TZ1800_ejwkn2h2 / TY0203 (Lidl)
 
 
 X-Mas Lights
