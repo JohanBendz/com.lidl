@@ -1,0 +1,11 @@
+{
+  "name": "com.lidl",
+  "version": "0.1.0",
+  "main": "app.js",
+  "devDependencies": {
+    "homey": "^2.9.2"
+  },
+  "dependencies": {
+    "homey-meshdriver": "^2.0.2"
+  }
+}

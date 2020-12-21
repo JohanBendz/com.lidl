@@ -1,0 +1,45 @@
+{
+  "id": "com.lidl",
+  "version": "0.1.0",
+  "compatibility": ">=4.2.0 <5.0.0",
+  "sdk": 2,
+  "name": {
+    "en": "Lidl Smart Home"
+  },
+  "description": {
+    "en": "Lidl Smart Home"
+  },
+  "tags": {
+    "en": [
+      "Lidl",
+      "Zigbee",
+      "Plug",
+      "Switch",
+      "LED",
+      "Light",
+      "RGB"
+    ]
+  },
+  "category": [
+    "lights"
+  ],
+  "brandColor": "#0050AA",
+  "permissions": [
+    "homey:wireless:zigbee"
+  ],
+  "images": {
+    "large": "/assets/images/large.png",
+    "small": "/assets/images/small.png"
+  },
+  "author": {
+    "name": "Johan Bendz",
+    "email": "johan_bendz@hotmail.com"
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "JohanBendz"
+      }
+    }
+  }
+}

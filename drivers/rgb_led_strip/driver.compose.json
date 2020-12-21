@@ -1,0 +1,30 @@
+{
+    "id": "rgb_led_strip",
+    "name": {
+      "en": "RGB LED Strip"
+    },
+    "$extends": ["light_color"],
+    "energy": {
+      "approximation": {
+        "usageOn": 0,
+        "usageOff": 0
+      }
+    },
+    "zigbee": {
+      "manufacturerName": [
+        "_TZ3000_riwp3k79"
+      ],
+      "productId": [
+        "TS0505A"
+      ],
+      "deviceId": 269,
+      "profileId": 260,
+      "learnmode": {
+        "image": "{{driverAssetsPath}}/icon.svg",
+        "instruction": {
+          "en": "Power on to enter pairing mode."
+        }
+      }
+    }
+
+}

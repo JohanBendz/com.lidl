@@ -1,0 +1,30 @@
+{
+    "id": "rgb_spot_GU10",
+    "name": {
+      "en": "RGB Spot GU10"
+    },
+    "$extends": ["light_color"],
+    "energy": {
+      "approximation": {
+        "usageOn": 5,
+        "usageOff": 1
+      }
+    },
+    "zigbee": {
+      "manufacturerName": [
+        "_TZ3000_kdpxju99"
+      ],
+      "productId": [
+        "TS0505A"
+      ],
+      "deviceId": 269,
+      "profileId": 260,
+      "learnmode": {
+        "image": "{{driverAssetsPath}}/icon.svg",
+        "instruction": {
+          "en": "Power on to enter pairing mode."
+        }
+      }
+    }
+
+}

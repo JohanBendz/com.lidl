@@ -1,0 +1,30 @@
+{
+    "id": "rgb_bulb_E27",
+    "name": {
+      "en": "RGB Bulb E27"
+    },
+    "$extends": ["light_color"],
+    "energy": {
+      "approximation": {
+        "usageOn": 9,
+        "usageOff": 1
+      }
+    },
+    "zigbee": {
+      "manufacturerName": [
+        "_TZ3000_dbou1ap4"
+      ],
+      "productId": [
+        "TS0505A"
+      ],
+      "deviceId": 269,
+      "profileId": 260,
+      "learnmode": {
+        "image": "{{driverAssetsPath}}/icon.svg",
+        "instruction": {
+          "en": "Power on to enter pairing mode."
+        }
+      }
+    }
+
+}

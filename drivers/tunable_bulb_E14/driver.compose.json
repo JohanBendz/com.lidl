@@ -1,0 +1,30 @@
+{
+    "id": "tunable_bulb_E14",
+    "name": {
+      "en": "Tunable Bulb E14"
+    },
+    "$extends": ["light_white"],
+    "energy": {
+      "approximation": {
+        "usageOn": 7,
+        "usageOff": 1
+      }
+    },
+    "zigbee": {
+      "manufacturerName": [
+        "_TZ3000_oborybow"
+      ],
+      "productId": [
+        "TS0502A"
+      ],
+      "deviceId": 269,
+      "profileId": 260,
+      "learnmode": {
+        "image": "{{driverAssetsPath}}/icon.svg",
+        "instruction": {
+          "en": "Power on to enter pairing mode."
+        }
+      }
+    }
+
+}

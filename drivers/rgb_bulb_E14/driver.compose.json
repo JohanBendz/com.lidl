@@ -1,0 +1,30 @@
+{
+    "id": "rgb_bulb_E14",
+    "name": {
+      "en": "RGB Bulb E14"
+    },
+    "$extends": ["light_color"],
+    "energy": {
+      "approximation": {
+        "usageOn": 7,
+        "usageOff": 1
+      }
+    },
+    "zigbee": {
+      "manufacturerName": [
+        "_TZ3000_odygigth"
+      ],
+      "productId": [
+        "TS0505A"
+      ],
+      "deviceId": 269,
+      "profileId": 260,
+      "learnmode": {
+        "image": "{{driverAssetsPath}}/icon.svg",
+        "instruction": {
+          "en": "Power on to enter pairing mode."
+        }
+      }
+    }
+
+}
