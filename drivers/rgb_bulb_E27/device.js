@@ -1,16 +1,20 @@
 'use strict';
 
-const Homey = require('homey');
-const ZigBeeLightDevice = require("homey-meshdriver").ZigBeeLightDevice;
+const { ZigBeeLightDevice } = require('homey-zigbeedriver');
 
 class rgb_bulb_E27 extends ZigBeeLightDevice {
 
-/*     async onMeshInit() {
+/*    async onNodeInit({zclNode}) {
 
-        await super.onMeshInit();
+        await super.onNodeInit({zclNode});
 
         this.enableDebug();
         this.printNode();
+
+        const node = await this.homey.zigbee.getNode(this);
+        node.handleFrame = (endpointId, clusterId, frame, meta) => {
+        this.log("frame data! endpointId:", endpointId,", clusterId:", clusterId,", frame:", frame, ", meta:", meta);
+        };
 
     } */
 

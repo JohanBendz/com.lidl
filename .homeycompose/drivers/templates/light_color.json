@@ -1,17 +1,27 @@
 {
     "class": "light",
-    "fullCapabilities": [
+    "capabilities": [
+      "onoff",
+      "dim"
+    ],
+    "fullcapabilities": [
       "onoff",
       "dim",
       "light_hue",
       "light_saturation",
       "light_mode"
     ],
-    "capabilities": [
-      "onoff",
-      "dim"
-    ],
-    "fullCapabilitiesOptions": {
+    "capabilitiesOptions": {
+      "dim": {
+          "opts": {
+          "duration": true
+          }
+      },
+      "onoff": {
+          "setOnDim": false
+        }
+    },
+    "fullcapabilitiesOptions": {
       "dim": {
           "opts": {
           "duration": true
@@ -23,16 +33,6 @@
           }
       },
       "light_saturation": {
-          "opts": {
-          "duration": true
-          }
-      },
-      "onoff": {
-          "setOnDim": false
-        }
-    },
-    "capabilitiesOptions": {
-      "dim": {
           "opts": {
           "duration": true
           }

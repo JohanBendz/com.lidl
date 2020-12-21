@@ -1,9 +1,9 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.lidl",
-  "version": "0.1.0",
-  "compatibility": ">=4.2.0 <5.0.0",
-  "sdk": 2,
+  "version": "0.1.2",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
   "name": {
     "en": "Lidl Smart Home"
   },
@@ -18,7 +18,12 @@
       "Switch",
       "LED",
       "Light",
-      "RGB"
+      "RGB",
+      "Door",
+      "Window",
+      "Sensor",
+      "Christmas",
+      "Socket"
     ]
   },
   "category": [
@@ -43,7 +48,285 @@
       }
     }
   },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Johan Bendz",
+        "email": "johan_bendz@hotmail.com"
+      },
+      {
+        "name": "Martijn Aben",
+        "email": "lidl@escabe.org"
+      }
+    ]
+  },
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Start effect"
+        },
+        "args": [
+          {
+            "name": "christmas_lights_device",
+            "type": "device",
+            "filter": "driver_id=christmas_lights"
+          },
+          {
+            "type": "dropdown",
+            "name": "effect_name",
+            "title": {
+              "en": "Effect"
+            },
+            "values": [
+              {
+                "id": "steady",
+                "label": {
+                  "en": "steady"
+                }
+              },
+              {
+                "id": "snow",
+                "label": {
+                  "en": "snow"
+                }
+              },
+              {
+                "id": "rainbow",
+                "label": {
+                  "en": "rainbow"
+                }
+              },
+              {
+                "id": "snake",
+                "label": {
+                  "en": "snake"
+                }
+              },
+              {
+                "id": "twinkle",
+                "label": {
+                  "en": "twinkle"
+                }
+              },
+              {
+                "id": "firework",
+                "label": {
+                  "en": "firework"
+                }
+              },
+              {
+                "id": "horizontal_flag",
+                "label": {
+                  "en": "horizontal_flag"
+                }
+              },
+              {
+                "id": "waves",
+                "label": {
+                  "en": "waves"
+                }
+              },
+              {
+                "id": "updown",
+                "label": {
+                  "en": "updown"
+                }
+              },
+              {
+                "id": "vintage",
+                "label": {
+                  "en": "vintage"
+                }
+              },
+              {
+                "id": "fading",
+                "label": {
+                  "en": "fading"
+                }
+              },
+              {
+                "id": "collide",
+                "label": {
+                  "en": "collide"
+                }
+              },
+              {
+                "id": "strobe",
+                "label": {
+                  "en": "strobe"
+                }
+              },
+              {
+                "id": "sparkles",
+                "label": {
+                  "en": "sparkles"
+                }
+              },
+              {
+                "id": "carnaval",
+                "label": {
+                  "en": "carnaval"
+                }
+              },
+              {
+                "id": "glow",
+                "label": {
+                  "en": "glow"
+                }
+              }
+            ]
+          },
+          {
+            "type": "range",
+            "name": "effect_speed",
+            "title": {
+              "en": "Speed"
+            },
+            "label": "/64",
+            "min": 0,
+            "max": 64,
+            "step": 1
+          },
+          {
+            "type": "color",
+            "name": "effect_color_0"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_1"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_2"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_3"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_4"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_5"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_6"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_7"
+          },
+          {
+            "type": "color",
+            "name": "effect_color_8"
+          }
+        ],
+        "id": "start_effect"
+      }
+    ]
+  },
   "drivers": [
+    {
+      "id": "christmas_lights",
+      "name": {
+        "en": "Christmas Lights"
+      },
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "lidl_xmas_mode"
+      ],
+      "images": {
+        "large": "/drivers/christmas_lights/assets/images/large.png",
+        "small": "/drivers/christmas_lights/assets/images/small.png"
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 0,
+          "usageOff": 0
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZE200_s8gkrkxk"
+        ],
+        "productId": [
+          "TS0601"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              6,
+              61184
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/christmas_lights/assets/icon.svg",
+          "instruction": {
+            "en": "Push the F button on the Christmas Lights controller for aprox 5-10 seconds and release, lights should start to flash slowly."
+          }
+        }
+      }
+    },
+    {
+      "id": "doorwindowsensor2",
+      "name": {
+        "en": "Door & Window Sensor (Lidl)"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_contact",
+        "alarm_battery",
+        "alarm_tamper"
+      ],
+      "energy": {
+        "batteries": [
+          "AAA",
+          "AAA"
+        ]
+      },
+      "images": {
+        "large": "/drivers/doorwindowsensor2/assets/images/large.png",
+        "small": "/drivers/doorwindowsensor2/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZ1800_ejwkn2h2"
+        ],
+        "productId": [
+          "TY0203"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              1,
+              1280
+            ],
+            "bindings": [
+              1,
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/doorwindowsensor2/assets/icon.svg",
+          "instruction": {
+            "en": "Insert a pin into the single hole on the side of the device and press it gently for aprox 5-10 seconds until the LED blinks green rapidly."
+          }
+        }
+      },
+      "settings": []
+    },
     {
       "id": "plug",
       "name": {
@@ -69,8 +352,19 @@
         "productId": [
           "TS011F"
         ],
-        "deviceId": 266,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
         "learnmode": {
           "instruction": {
             "en": "Press and hold down on/off switch for aprox 5 seconds until the LED blinks rapidly."
@@ -81,18 +375,28 @@
     },
     {
       "class": "light",
-      "fullCapabilities": [
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "fullcapabilities": [
         "onoff",
         "dim",
         "light_hue",
         "light_saturation",
         "light_mode"
       ],
-      "capabilities": [
-        "onoff",
-        "dim"
-      ],
-      "fullCapabilitiesOptions": {
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "fullcapabilitiesOptions": {
         "dim": {
           "opts": {
             "duration": true
@@ -104,16 +408,6 @@
           }
         },
         "light_saturation": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "onoff": {
-          "setOnDim": false
-        }
-      },
-      "capabilitiesOptions": {
-        "dim": {
           "opts": {
             "duration": true
           }
@@ -143,8 +437,24 @@
         "productId": [
           "TS0505A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/rgb_bulb_E14/assets/icon.svg",
           "instruction": {
@@ -152,38 +462,32 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
-          }
-        }
-      ]
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "fullcapabilities": [
         "onoff",
         "dim",
         "light_hue",
         "light_saturation",
         "light_mode"
       ],
-      "capabilities": [
-        "onoff",
-        "dim"
-      ],
-      "fullCapabilitiesOptions": {
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "fullcapabilitiesOptions": {
         "dim": {
           "opts": {
             "duration": true
@@ -195,16 +499,6 @@
           }
         },
         "light_saturation": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "onoff": {
-          "setOnDim": false
-        }
-      },
-      "capabilitiesOptions": {
-        "dim": {
           "opts": {
             "duration": true
           }
@@ -234,8 +528,24 @@
         "productId": [
           "TS0505A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/rgb_bulb_E27/assets/icon.svg",
           "instruction": {
@@ -243,38 +553,32 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
-          }
-        }
-      ]
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "fullcapabilities": [
         "onoff",
         "dim",
         "light_hue",
         "light_saturation",
         "light_mode"
       ],
-      "capabilities": [
-        "onoff",
-        "dim"
-      ],
-      "fullCapabilitiesOptions": {
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "fullcapabilitiesOptions": {
         "dim": {
           "opts": {
             "duration": true
@@ -286,16 +590,6 @@
           }
         },
         "light_saturation": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "onoff": {
-          "setOnDim": false
-        }
-      },
-      "capabilitiesOptions": {
-        "dim": {
           "opts": {
             "duration": true
           }
@@ -325,8 +619,24 @@
         "productId": [
           "TS0505A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/rgb_led_strip/assets/icon.svg",
           "instruction": {
@@ -334,38 +644,32 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
-          }
-        }
-      ]
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
+      "capabilities": [
+        "onoff",
+        "dim"
+      ],
+      "fullcapabilities": [
         "onoff",
         "dim",
         "light_hue",
         "light_saturation",
         "light_mode"
       ],
-      "capabilities": [
-        "onoff",
-        "dim"
-      ],
-      "fullCapabilitiesOptions": {
+      "capabilitiesOptions": {
+        "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "fullcapabilitiesOptions": {
         "dim": {
           "opts": {
             "duration": true
@@ -377,16 +681,6 @@
           }
         },
         "light_saturation": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "onoff": {
-          "setOnDim": false
-        }
-      },
-      "capabilitiesOptions": {
-        "dim": {
           "opts": {
             "duration": true
           }
@@ -416,8 +710,24 @@
         "productId": [
           "TS0505A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/rgb_spot_GU10/assets/icon.svg",
           "instruction": {
@@ -425,42 +735,120 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
+      "settings": []
+    },
+    {
+      "id": "socket_power_strip",
+      "name": {
+        "en": "3 Socket Power Strip"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "approximated": true
+        }
+      },
+      "images": {
+        "large": "/drivers/socket_power_strip/assets/images/large.png",
+        "small": "/drivers/socket_power_strip/assets/images/small.png"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZ3000_1obwwnmq",
+          "_TZ3000_vzopcetz"
+        ],
+        "productId": [
+          "TS011F"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
           },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
+          "2": {
+            "clusters": [
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
           },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
+          "3": {
+            "clusters": [
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "devices": {
+          "socket2": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "Power Strip Socket 2"
+            },
+            "energy": {
+              "approximation": {
+                "usageOn": 0,
+                "usageOff": 0
+              }
+            }
+          },
+          "socket3": {
+            "class": "socket",
+            "capabilities": [
+              "onoff"
+            ],
+            "name": {
+              "en": "Power Strip Socket 3"
+            },
+            "energy": {
+              "approximation": {
+                "usageOn": 0,
+                "usageOff": 0
+              }
+            }
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "A tile for each socket will be created. Press and hold down on/off switch for aprox 5 seconds until the LED blinks rapidly."
           }
         }
-      ]
+      },
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
-        "onoff",
-        "dim",
-        "light_temperature"
-      ],
       "capabilities": [
         "onoff",
         "dim"
       ],
-      "fullCapabilitiesOptions": {
+      "fullcapabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
         "dim": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -469,8 +857,13 @@
           "setOnDim": false
         }
       },
-      "capabilitiesOptions": {
+      "fullcapabilitiesOptions": {
         "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -500,8 +893,24 @@
         "productId": [
           "TS0502A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/tunable_bulb_E14/assets/icon.svg",
           "instruction": {
@@ -509,42 +918,21 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
-          }
-        }
-      ]
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
-        "onoff",
-        "dim",
-        "light_temperature"
-      ],
       "capabilities": [
         "onoff",
         "dim"
       ],
-      "fullCapabilitiesOptions": {
+      "fullcapabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
         "dim": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -553,8 +941,13 @@
           "setOnDim": false
         }
       },
-      "capabilitiesOptions": {
+      "fullcapabilitiesOptions": {
         "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -584,8 +977,24 @@
         "productId": [
           "TS0502A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/tunable_bulb_E27/assets/icon.svg",
           "instruction": {
@@ -593,42 +1002,21 @@
           }
         }
       },
-      "settings": [
-        {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
-          }
-        }
-      ]
+      "settings": []
     },
     {
       "class": "light",
-      "fullCapabilities": [
-        "onoff",
-        "dim",
-        "light_temperature"
-      ],
       "capabilities": [
         "onoff",
         "dim"
       ],
-      "fullCapabilitiesOptions": {
+      "fullcapabilities": [
+        "onoff",
+        "dim",
+        "light_temperature"
+      ],
+      "capabilitiesOptions": {
         "dim": {
-          "opts": {
-            "duration": true
-          }
-        },
-        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -637,8 +1025,13 @@
           "setOnDim": false
         }
       },
-      "capabilitiesOptions": {
+      "fullcapabilitiesOptions": {
         "dim": {
+          "opts": {
+            "duration": true
+          }
+        },
+        "light_temperature": {
           "opts": {
             "duration": true
           }
@@ -668,8 +1061,24 @@
         "productId": [
           "TS0502A"
         ],
-        "deviceId": 269,
-        "profileId": 260,
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
         "learnmode": {
           "image": "/drivers/tunable_spot_GU10/assets/icon.svg",
           "instruction": {
@@ -677,23 +1086,41 @@
           }
         }
       },
-      "settings": [
+      "settings": []
+    }
+  ],
+  "capabilities": {
+    "lidl_xmas_mode": {
+      "title": {
+        "en": "Mode"
+      },
+      "getable": true,
+      "setable": true,
+      "type": "enum",
+      "uiComponent": "picker",
+      "values": [
         {
-          "id": "transition_time",
-          "type": "number",
-          "label": {
-            "en": "Transition Time"
-          },
-          "hint": {
-            "en": "This setting determines the time in seconds it takes to dim from one level to another."
-          },
-          "value": 1,
-          "attr": {
-            "min": 0,
-            "max": 6553
+          "id": "white",
+          "title": {
+            "en": "White",
+            "nl": "Wit"
+          }
+        },
+        {
+          "id": "color",
+          "title": {
+            "en": "Color",
+            "nl": "Kleur"
+          }
+        },
+        {
+          "id": "effect",
+          "title": {
+            "en": "Effect",
+            "nl": "Effect"
           }
         }
       ]
     }
-  ]
+  }
 }

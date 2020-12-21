@@ -1,21 +1,16 @@
 {
     "class": "light",
-    "fullCapabilities": [
-    "onoff",
-    "dim",
-    "light_temperature"
-    ],
     "capabilities": [
     "onoff",
     "dim"
     ],
-    "fullCapabilitiesOptions": {
+    "fullcapabilities": [
+    "onoff",
+    "dim",
+    "light_temperature"
+    ],
+    "capabilitiesOptions": {
     "dim": {
-        "opts": {
-        "duration": true
-        }
-    },
-    "light_temperature": {
         "opts": {
         "duration": true
         }
@@ -24,8 +19,13 @@
         "setOnDim": false
         }
     },
-    "capabilitiesOptions": {
+    "fullcapabilitiesOptions": {
     "dim": {
+        "opts": {
+        "duration": true
+        }
+    },
+    "light_temperature": {
         "opts": {
         "duration": true
         }
