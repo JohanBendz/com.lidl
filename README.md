@@ -21,6 +21,8 @@ Adds support for Lidl Smart Home Devices
     _TZ3000_49qchf10 / TS0502A (Lidl)
 - Tunable Spot GU10
     _TZ3000_el5kt5im / TS0502A (Lidl)
+- Christmas Lights
+    _TZE200_s8gkrkxk / TS0601 (Lidl)
 - Door / Windows Sensor
     _TZ1800_ejwkn2h2 / TY0203 (Lidl)
 
