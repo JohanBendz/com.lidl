@@ -178,6 +178,7 @@ class christmas_lights extends ZigBeeDevice {
             data
         });
     }
+    //endregion
 
     onDeleted(){
 		this.log("Christmas Lights removed")

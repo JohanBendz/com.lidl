@@ -9,7 +9,7 @@ class LidlSmartHome extends Homey.App {
 
     this.homey.flow.getActionCard('start_effect').registerRunListener(async (args, state) => {
       this.log("ACTION TRIGGERED");
-      await args.my_device.StartEffect(args);
+      await args.christmas_lights_device.StartEffect(args);
       return true
     })
     
