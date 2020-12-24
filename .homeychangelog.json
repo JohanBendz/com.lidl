@@ -4,5 +4,8 @@
   },
   "0.1.3": {
     "en": "Christmas Lights fix."
+  },
+  "0.1.4": {
+    "en": "Door/Window Sensor and Motion Sensor added (old non working driver or door/window sensor removed)."
   }
 }

@@ -11,7 +11,8 @@ Discover the benefits of Lidl Smart Home
 PLEASE OBSERVE!
 Known issues:
 Until further notice the RGB lights only support on/off and dim (white temperature and colors will be added when know issues are resolved).
-Door / Windows Sensor may not enroll to Homey and if so will not send reports. Re-Pair might help.
+
+Please be advised, some devices need a good 5-10 minutes before they work as intended after being added to Homey. If a newly added device show as broken, give it 10 minutes, if still not OK restart the app.
 
 Supported devices:
 - Smart Plug, without metering
