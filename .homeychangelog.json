@@ -7,5 +7,8 @@
   },
   "0.1.4": {
     "en": "Door/Window Sensor and Motion Sensor added (old non working driver or door/window sensor removed)."
+  },
+  "0.1.5": {
+    "en": "Fix for Door/Window Sensor and Motion Sensor."
   }
 }
