@@ -10,5 +10,8 @@
   },
   "0.1.5": {
     "en": "Fix for Door/Window Sensor and Motion Sensor."
+  },
+  "0.1.6": {
+    "en": "Minor updates."
   }
 }
