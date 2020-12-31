@@ -1,7 +1,7 @@
 {
   "id": "smart_door_window_sensor",
   "name": {
-    "en": "Smart Door & Window Sensor (Lidl)"
+    "en": "SilverCrest Smart Door & Window Sensor (Lidl)"
   },
   "class": "sensor",
   "capabilities": [

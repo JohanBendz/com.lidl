@@ -1,7 +1,7 @@
 {
     "id": "smart_motion_sensor",
     "name": {
-      "en": "Smart Motion Sensor (Lidl)"
+      "en": "SilverCrest Smart Motion Sensor (Lidl)"
     },
     "class": "sensor",
     "capabilities": [

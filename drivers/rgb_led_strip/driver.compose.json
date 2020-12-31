@@ -1,7 +1,7 @@
 {
     "id": "rgb_led_strip",
     "name": {
-      "en": "RGB LED Strip"
+      "en": "Livarno Lux RGB LED Strip"
     },
     "$extends": ["light_color"],
     "energy": {

@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.lidl",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
@@ -237,7 +237,7 @@
     {
       "id": "christmas_lights",
       "name": {
-        "en": "Christmas Lights"
+        "en": "Melinera Christmas Lights"
       },
       "class": "light",
       "capabilities": [
@@ -288,7 +288,7 @@
     {
       "id": "plug",
       "name": {
-        "en": "Smart Plug without metering"
+        "en": "SilverCrest Smart Plug without metering"
       },
       "class": "socket",
       "capabilities": [
@@ -380,7 +380,7 @@
       },
       "id": "rgb_bulb_E14",
       "name": {
-        "en": "RGB Bulb E14"
+        "en": "Livarno Lux RGB Bulb E14"
       },
       "energy": {
         "approximation": {
@@ -471,7 +471,7 @@
       },
       "id": "rgb_bulb_E27",
       "name": {
-        "en": "RGB Bulb E27"
+        "en": "Livarno Lux RGB Bulb E27"
       },
       "energy": {
         "approximation": {
@@ -562,7 +562,7 @@
       },
       "id": "rgb_led_strip",
       "name": {
-        "en": "RGB LED Strip"
+        "en": "Livarno Lux RGB LED Strip"
       },
       "energy": {
         "approximation": {
@@ -653,7 +653,7 @@
       },
       "id": "rgb_spot_GU10",
       "name": {
-        "en": "RGB Spot GU10"
+        "en": "Livarno Lux RGB Spot GU10"
       },
       "energy": {
         "approximation": {
@@ -698,7 +698,7 @@
     {
       "id": "smart_door_window_sensor",
       "name": {
-        "en": "Smart Door & Window Sensor (Lidl)"
+        "en": "SilverCrest Smart Door & Window Sensor (Lidl)"
       },
       "class": "sensor",
       "capabilities": [
@@ -766,7 +766,7 @@
     {
       "id": "smart_motion_sensor",
       "name": {
-        "en": "Smart Motion Sensor (Lidl)"
+        "en": "SilverCrest Smart Motion Sensor (Lidl)"
       },
       "class": "sensor",
       "capabilities": [
@@ -833,7 +833,7 @@
     {
       "id": "socket_power_strip",
       "name": {
-        "en": "3 Socket Power Strip"
+        "en": "SilverCrest 3 Socket Power Strip"
       },
       "class": "socket",
       "capabilities": [
@@ -971,7 +971,7 @@
       },
       "id": "tunable_bulb_E14",
       "name": {
-        "en": "Tunable Bulb E14"
+        "en": "Livarno Lux Tunable Bulb E14"
       },
       "energy": {
         "approximation": {
@@ -1055,7 +1055,7 @@
       },
       "id": "tunable_bulb_E27",
       "name": {
-        "en": "Tunable Bulb E27"
+        "en": "Livarno Lux Tunable Bulb E27"
       },
       "energy": {
         "approximation": {
@@ -1139,7 +1139,7 @@
       },
       "id": "tunable_spot_GU10",
       "name": {
-        "en": "Tunable Spot GU10"
+        "en": "Livarno Lux Tunable Spot GU10"
       },
       "energy": {
         "approximation": {

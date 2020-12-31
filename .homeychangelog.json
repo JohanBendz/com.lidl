@@ -13,5 +13,8 @@
   },
   "0.1.6": {
     "en": "Minor updates."
+  },
+  "0.1.7": {
+    "en": "Added product brand to device names."
   }
 }

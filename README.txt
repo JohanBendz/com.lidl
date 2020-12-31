@@ -15,29 +15,42 @@ Until further notice the RGB lights only support on/off and dim (white temperatu
 Please be advised, some devices need a good 5-10 minutes before they work as intended after being added to Homey. If a newly added device show as broken, give it 10 minutes, if still not OK restart the app.
 
 Supported devices:
-- Smart Plug, without metering
+- SilverCrest Smart Plug, without metering
     _TZ3000_kdi2o9m6 / TS011F (Lidl)
-- 3 Socket Power Strip
+
+- SilverCrest 3 Socket Power Strip
     _TZ3000_1obwwnmq / TS011F (Lidl)
     _TZ3000_vzopcetz / TS011F (Lidl)
-- RGB Bulb E14
+
+- Livarno Lux RGB Bulb E14
     _TZ3000_odygigth / TS0505A (Lidl)
-- RGB Bulb E27
+
+- Livarno Lux RGB Bulb E27
     _TZ3000_dbou1ap4 / TS0505A (Lidl)
-- RGB LED Strip
+
+- Livarno Lux RGB LED Strip
     _TZ3000_riwp3k79 / TS0505A (Lidl)
-- RGB Spot GU10
+
+- Livarno Lux RGB Spot GU10
     _TZ3000_kdpxju99 / TS0505A (Lidl)
-- Tunable Bulb E14
+    
+- Livarno Lux Tunable Bulb E14
     _TZ3000_oborybow / TS0502A (Lidl)
-- Tunable Bulb E27
+
+- Livarno Lux Tunable Bulb E27
     _TZ3000_49qchf10 / TS0502A (Lidl)
-- Tunable Spot GU10
+
+- Livarno Lux Tunable Spot GU10
     _TZ3000_el5kt5im / TS0502A (Lidl)
+
 - Christmas Lights
     _TZE200_s8gkrkxk / TS0601 (Lidl)
-- Door / Windows Sensor
+
+- SilverCrest Door / Windows Sensor
     _TZ1800_ejwkn2h2 / TY0203 (Lidl)
+    
+- SilverCrest Smart Motion Sensor
+   _TZ1800_fcdjzz3s / TY0202 (Lidl)
 
 
 X-Mas Lights
