@@ -1,7 +1,7 @@
 {
     "id": "rgb_spot_GU10",
     "name": {
-      "en": "RGB Spot GU10"
+      "en": "Livarno Lux RGB Spot GU10"
     },
     "$extends": ["light_color"],
     "energy": {

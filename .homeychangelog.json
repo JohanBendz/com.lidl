@@ -4,5 +4,8 @@
   },
   "0.1.1": {
     "en": "First version, support for lights and plug."
+  },
+  "0.1.2": {
+    "en": "Added manufacturer name to devices."
   }
 }

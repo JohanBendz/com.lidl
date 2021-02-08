@@ -1,7 +1,7 @@
 {
   "id": "plug",
   "name": {
-    "en": "Smart Plug without metering"
+    "en": "SilverCrest Smart Plug without metering"
   },
   "class": "socket",
   "capabilities": [
