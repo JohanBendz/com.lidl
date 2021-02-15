@@ -9,9 +9,6 @@ Discover the benefits of Lidl Smart Home
 * Good for the environment and your wallet
 
 PLEASE OBSERVE!
-Known issues:
-Until further notice the RGB lights only support on/off and dim (white temperature and colors will be added when know issues are resolved).
-
 Please be advised, some devices need a good 5-10 minutes before they work as intended after being added to Homey. If a newly added device show as broken, give it 10 minutes, if still not OK restart the app.
 
 Supported devices:
@@ -33,6 +30,9 @@ Supported devices:
 
 - Livarno Lux RGB Spot GU10
     _TZ3000_kdpxju99 / TS0505A (Lidl)
+
+- Livarno Lux RGB Spot GardenLight
+   _TZ3000_h1jnz6l8 / TS0505A (Lidl)
     
 - Livarno Lux Tunable Bulb E14
     _TZ3000_oborybow / TS0502A (Lidl)
@@ -43,7 +43,7 @@ Supported devices:
 - Livarno Lux Tunable Spot GU10
     _TZ3000_el5kt5im / TS0502A (Lidl)
 
-- Christmas Lights
+- Melinera Christmas Lights
     _TZE200_s8gkrkxk / TS0601 (Lidl)
 
 - SilverCrest Door / Windows Sensor
@@ -85,4 +85,5 @@ to be used by the device, so only 9 options are shown.
 
 Attributions
 * Support for and information regarding Christmas Lights by Martijn Aben (escabe.org)
+* Jurgen Heine for the help with color issues on RGB lights
 * Christmas tree icon by Stanislav Levin from the Noun Project

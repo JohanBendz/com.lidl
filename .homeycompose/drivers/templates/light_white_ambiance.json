@@ -2,7 +2,8 @@
     "class": "light",
     "capabilities": [
     "onoff",
-    "dim"
+    "dim",
+    "light_temperature"
     ],
     "capabilitiesOptions": {
         "onoff": {

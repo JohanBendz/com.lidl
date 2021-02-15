@@ -15,6 +15,9 @@
     "en": "Minor updates."
   },
   "0.1.7": {
-    "en": "Added product brand to device names."
+    "en": "Added product brands to device names."
+  },
+  "0.1.8": {
+    "en": "Fix for color and temperature lights."
   }
 }

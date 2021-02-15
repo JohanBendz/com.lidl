@@ -3,30 +3,32 @@ Adds support for Lidl Smart Home Devices
 
 ## Supported devices:
 - Smart Plug, without metering
-    _TZ3000_kdi2o9m6 / TS011F (Lidl)
+    _TZ3000_kdi2o9m6 / TS011F (SilverCrest)
 - 3 Socket Power Strip
-    _TZ3000_1obwwnmq / TS011F (Lidl)
-    _TZ3000_vzopcetz / TS011F (Lidl)
+    _TZ3000_1obwwnmq / TS011F (SilverCrest)
+    _TZ3000_vzopcetz / TS011F (SilverCrest)
 - RGB Bulb E14
-    _TZ3000_odygigth / TS0505A (Lidl)
+    _TZ3000_odygigth / TS0505A (Livarno Lux)
 - RGB Bulb E27
-    _TZ3000_dbou1ap4 / TS0505A (Lidl)
+    _TZ3000_dbou1ap4 / TS0505A (Livarno Lux)
 - RGB LED Strip
-    _TZ3000_riwp3k79 / TS0505A (Lidl)
+    _TZ3000_riwp3k79 / TS0505A (Livarno Lux)
 - RGB Spot GU10
-    _TZ3000_kdpxju99 / TS0505A (Lidl)
+    _TZ3000_kdpxju99 / TS0505A (Livarno Lux)
+- RGB Spot GardenLight
+   _TZ3000_h1jnz6l8 / TS0505A (Livarno Lux)
 - Tunable Bulb E14
-    _TZ3000_oborybow / TS0502A (Lidl)
+    _TZ3000_oborybow / TS0502A (Livarno Lux)
 - Tunable Bulb E27
-    _TZ3000_49qchf10 / TS0502A (Lidl)
+    _TZ3000_49qchf10 / TS0502A (Livarno Lux)
 - Tunable Spot GU10
-    _TZ3000_el5kt5im / TS0502A (Lidl)
+    _TZ3000_el5kt5im / TS0502A (Livarno Lux)
 - Christmas Lights
-    _TZE200_s8gkrkxk / TS0601 (Lidl)
+    _TZE200_s8gkrkxk / TS0601 (Melinera)
 - Smart Door / Windows Sensor
-    _TZ1800_ejwkn2h2 / TY0203 (Lidl)
+    _TZ1800_ejwkn2h2 / TY0203 (SilverCrest)
 - Smart Motion Sensor
-   _TZ1800_fcdjzz3s / TY0202 (Lidl)
+   _TZ1800_fcdjzz3s / TY0202 (SilverCrest)
 
 
 ## X-Mas Lights
@@ -61,4 +63,5 @@ to be used by the device, so only 9 options are shown.
 
 ##### Attributions
 * Support for and information regarding Christmas Lights by Martijn Aben (escabe.org)
+* Jurgen Heine for the help with color issues on RGB lights
 * Christmas tree icon by Stanislav Levin from the Noun Project
