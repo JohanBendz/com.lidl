@@ -7,8 +7,7 @@ class smart_door_window_sensor extends ZigBeeDevice {
 		
 	async onNodeInit({zclNode}) {
 
-/* 		this.printNode();
-		debug(true); */
+ 		this.printNode();
 
 		if (this.isFirstInit()){
 			await this.configureAttributeReporting([

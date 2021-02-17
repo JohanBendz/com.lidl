@@ -1,7 +1,7 @@
 {
   "id": "rgb_spot_GardenLight",
   "name": {
-    "en": "RGB Spot Garden light"
+    "en": "Livarno Lux RGBW Spot Garden light"
   },
   "$extends": [ "light_color_ambiance" ],
   "energy": {

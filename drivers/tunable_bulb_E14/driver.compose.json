@@ -1,7 +1,7 @@
 {
     "id": "tunable_bulb_E14",
     "name": {
-      "en": "Livarno Lux Tunable Bulb E14"
+      "en": "Livarno Lux Tunable White Bulb E14"
     },
     "$extends": ["light_white_ambiance"],
     "energy": {

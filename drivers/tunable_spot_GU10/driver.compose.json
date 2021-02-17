@@ -1,7 +1,7 @@
 {
     "id": "tunable_spot_GU10",
     "name": {
-      "en": "Livarno Lux Tunable Spot GU10"
+      "en": "Livarno Lux Tunable White Spot GU10"
     },
     "$extends": ["light_white_ambiance"],
     "energy": {

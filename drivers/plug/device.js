@@ -7,8 +7,7 @@ class plug extends ZigBeeDevice {
 		
 	async onNodeInit({zclNode}) {
 
-/*     this.printNode();
-	  debug(true); */
+    this.printNode();
 
     this.registerCapability('onoff', CLUSTER.ON_OFF, {
       getOpts: {

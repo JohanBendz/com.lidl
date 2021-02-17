@@ -1,7 +1,7 @@
 {
     "id": "rgb_bulb_E14",
     "name": {
-      "en": "Livarno Lux RGB Bulb E14"
+      "en": "Livarno Lux RGBW Bulb E14"
     },
     "$extends": ["light_color_ambiance"],
     "energy": {
