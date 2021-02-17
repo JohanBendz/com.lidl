@@ -352,7 +352,7 @@
       },
       "id": "rgb_bulb_E14",
       "name": {
-        "en": "Livarno Lux RGB Bulb E14"
+        "en": "Livarno Lux RGBW Bulb E14"
       },
       "energy": {
         "approximation": {
@@ -415,7 +415,7 @@
       },
       "id": "rgb_bulb_E27",
       "name": {
-        "en": "Livarno Lux RGB Bulb E27"
+        "en": "Livarno Lux RGBW Bulb E27"
       },
       "energy": {
         "approximation": {
@@ -478,7 +478,7 @@
       },
       "id": "rgb_led_strip",
       "name": {
-        "en": "Livarno Lux RGB LED Strip"
+        "en": "Livarno Lux RGBW LED Strip"
       },
       "energy": {
         "approximation": {
@@ -541,7 +541,7 @@
       },
       "id": "rgb_spot_GU10",
       "name": {
-        "en": "Livarno Lux RGB Spot GU10"
+        "en": "Livarno Lux RGBW Spot GU10"
       },
       "energy": {
         "approximation": {
@@ -604,7 +604,7 @@
       },
       "id": "rgb_spot_GardenLight",
       "name": {
-        "en": "RGB Spot Garden light"
+        "en": "Livarno Lux RGBW Spot Garden light"
       },
       "energy": {
         "approximation": {
@@ -898,7 +898,7 @@
       },
       "id": "tunable_bulb_E14",
       "name": {
-        "en": "Livarno Lux Tunable Bulb E14"
+        "en": "Livarno Lux Tunable White Bulb E14"
       },
       "energy": {
         "approximation": {
@@ -958,7 +958,7 @@
       },
       "id": "tunable_bulb_E27",
       "name": {
-        "en": "Livarno Lux Tunable Bulb E27"
+        "en": "Livarno Lux Tunable White Bulb E27"
       },
       "energy": {
         "approximation": {
@@ -1018,7 +1018,7 @@
       },
       "id": "tunable_spot_GU10",
       "name": {
-        "en": "Livarno Lux Tunable Spot GU10"
+        "en": "Livarno Lux Tunable White Spot GU10"
       },
       "energy": {
         "approximation": {
