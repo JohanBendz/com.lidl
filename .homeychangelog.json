@@ -18,6 +18,9 @@
     "en": "Added product brands to device names."
   },
   "0.1.8": {
-    "en": "Fix for color and temperature lights. Already paired lights MUST be removed and paired again to get color/temperature functionality."
+    "en": "Fix for color lights. Already paired lights MUST be removed and paired again to get color/temperature functionality."
+  },
+  "0.1.9": {
+    "en": "Fix for color white tunable (temperature) lights. Lights may have to be removed and paired again."
   }
 }

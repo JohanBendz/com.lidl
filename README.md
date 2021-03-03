@@ -2,36 +2,48 @@
 Adds support for Lidl Smart Home Devices
 
 ## Supported devices:
-- Smart Plug, without metering
-    _TZ3000_kdi2o9m6 / TS011F (SilverCrest)
-- 3 Socket Power Strip
-    _TZ3000_1obwwnmq / TS011F (SilverCrest)
-    _TZ3000_vzopcetz / TS011F (SilverCrest)
-- RGB Bulb E14
-    _TZ3000_odygigth / TS0505A (Livarno Lux)
-- RGB Bulb E27
-    _TZ3000_dbou1ap4 / TS0505A (Livarno Lux)
-- RGB LED Strip
-    _TZ3000_riwp3k79 / TS0505A (Livarno Lux)
-- RGB Spot GU10
-    _TZ3000_kdpxju99 / TS0505A (Livarno Lux)
-- RGB Spot GardenLight
-   _TZ3000_h1jnz6l8 / TS0505A (Livarno Lux)
-- Tunable Bulb E14
-    _TZ3000_oborybow / TS0502A (Livarno Lux)
-- Tunable Bulb E27
-    _TZ3000_49qchf10 / TS0502A (Livarno Lux)
-- Tunable Spot GU10
-    _TZ3000_el5kt5im / TS0502A (Livarno Lux)
-- Christmas Lights
-    _TZE200_s8gkrkxk / TS0601 (Melinera)
-- Smart Door / Windows Sensor
-    _TZ1800_ejwkn2h2 / TY0203 (SilverCrest)
-- Smart Motion Sensor
-   _TZ1800_fcdjzz3s / TY0202 (SilverCrest)
+- SilverCrest Smart Plug, without metering
+    _TZ3000_kdi2o9m6 / TS011F (Lidl)
+
+- SilverCrest 3 Socket Power Strip
+    _TZ3000_1obwwnmq / TS011F (Lidl)
+    _TZ3000_vzopcetz / TS011F (Lidl)
+
+- Livarno Lux RGB Bulb E14
+    _TZ3000_odygigth / TS0505A (Lidl)
+
+- Livarno Lux RGB Bulb E27
+    _TZ3000_dbou1ap4 / TS0505A (Lidl)
+
+- Livarno Lux RGB LED Strip
+    _TZ3000_riwp3k79 / TS0505A (Lidl)
+
+- Livarno Lux RGB Spot GU10
+    _TZ3000_kdpxju99 / TS0505A (Lidl)
+
+- Livarno Lux RGB Spot GardenLight
+   _TZ3000_h1jnz6l8 / TS0505A (Lidl)
+    
+- Livarno Lux Tunable Bulb E14
+    _TZ3000_oborybow / TS0502A (Lidl)
+
+- Livarno Lux Tunable Bulb E27
+    _TZ3000_49qchf10 / TS0502A (Lidl)
+
+- Livarno Lux Tunable Spot GU10
+    _TZ3000_el5kt5im / TS0502A (Lidl)
+
+- Melinera Christmas Lights
+    _TZE200_s8gkrkxk / TS0601 (Lidl)
+
+- SilverCrest Door / Windows Sensor
+    _TZ1800_ejwkn2h2 / TY0203 (Lidl)
+    
+- SilverCrest Smart Motion Sensor
+   _TZ1800_fcdjzz3s / TY0202 (Lidl)
 
 
-## X-Mas Lights
+## Christmas Lights
 
 ### Pairing
 Go into Homey and add the device. During pairing hold the F button for 5 seconds and let go. Light should start pulsing 
@@ -40,7 +52,7 @@ slowly and pairing should complete, the lights should then stop pulsing.
 ### Controlling the lights
 
 #### Modes
-The X-Mas Lights support 3 modes: `white`, `color` and `effect`. You can switch between these modes in the App. 
+The Christmas Lights support 3 modes: `white`, `color` and `effect`. You can switch between these modes in the App. 
 You will mainly use this to switch back to `white` mode though:
 
 * The best way to switch to `color` mode is to simply select a color which then automatically switches to `color` mode.
