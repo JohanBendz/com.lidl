@@ -1,14 +1,14 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.lidl",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
     "en": "Lidl Smart Home"
   },
   "description": {
-    "en": "Discover the benefits of Lidl Smart Home"
+    "en": "Discover the benefits"
   },
   "tags": {
     "en": [
@@ -473,6 +473,69 @@
         }
       },
       "images": {
+        "large": "/drivers/rgb_led_light_bar/assets/images/large.png",
+        "small": "/drivers/rgb_led_light_bar/assets/images/small.png"
+      },
+      "id": "rgb_led_light_bar",
+      "name": {
+        "en": "Livarno Lux RGBW Light Bar"
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 8,
+          "usageOff": 0.2
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZ3000_gek6snaj"
+        ],
+        "productId": [
+          "TS0505A"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rgb_led_light_bar/assets/icon.svg",
+          "instruction": {
+            "en": "Power on to enter pairing mode."
+          }
+        }
+      },
+      "settings": []
+    },
+    {
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
         "large": "/drivers/rgb_led_strip/assets/images/large.png",
         "small": "/drivers/rgb_led_strip/assets/images/small.png"
       },
@@ -513,6 +576,69 @@
         },
         "learnmode": {
           "image": "/drivers/rgb_led_strip/assets/icon.svg",
+          "instruction": {
+            "en": "Power on to enter pairing mode."
+          }
+        }
+      },
+      "settings": []
+    },
+    {
+      "class": "light",
+      "capabilities": [
+        "onoff",
+        "dim",
+        "light_hue",
+        "light_saturation",
+        "light_temperature",
+        "light_mode"
+      ],
+      "capabilitiesOptions": {
+        "onoff": {
+          "setOnDim": false
+        }
+      },
+      "images": {
+        "large": "/drivers/rgb_mood_light/assets/images/large.png",
+        "small": "/drivers/rgb_mood_light/assets/images/small.png"
+      },
+      "id": "rgb_mood_light",
+      "name": {
+        "en": "Livarno Lux RGBW Mood Light"
+      },
+      "energy": {
+        "approximation": {
+          "usageOn": 8,
+          "usageOff": 0.2
+        }
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZ3000_9cpuaca6"
+        ],
+        "productId": [
+          "TS0505A"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              3,
+              4,
+              5,
+              6,
+              8,
+              768
+            ],
+            "bindings": [
+              6,
+              8,
+              768
+            ]
+          }
+        },
+        "learnmode": {
+          "image": "/drivers/rgb_mood_light/assets/icon.svg",
           "instruction": {
             "en": "Power on to enter pairing mode."
           }

@@ -1,13 +1,13 @@
 {
   "id": "com.lidl",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "compatibility": ">=5.0.0",
   "sdk": 3,
   "name": {
     "en": "Lidl Smart Home"
   },
   "description": {
-    "en": "Discover the benefits of Lidl Smart Home"
+    "en": "Discover the benefits"
   },
   "tags": {
     "en": [

@@ -3,44 +3,50 @@ Adds support for Lidl Smart Home Devices
 
 ## Supported devices:
 - SilverCrest Smart Plug, without metering
-    _TZ3000_kdi2o9m6 / TS011F (Lidl)
+    _TZ3000_kdi2o9m6 / TS011F
 
 - SilverCrest 3 Socket Power Strip
-    _TZ3000_1obwwnmq / TS011F (Lidl)
-    _TZ3000_vzopcetz / TS011F (Lidl)
+    _TZ3000_1obwwnmq / TS011F
+    _TZ3000_vzopcetz / TS011F
 
 - Livarno Lux RGB Bulb E14
-    _TZ3000_odygigth / TS0505A (Lidl)
+    _TZ3000_odygigth / TS0505A
 
 - Livarno Lux RGB Bulb E27
-    _TZ3000_dbou1ap4 / TS0505A (Lidl)
+    _TZ3000_dbou1ap4 / TS0505A
 
 - Livarno Lux RGB LED Strip
-    _TZ3000_riwp3k79 / TS0505A (Lidl)
+    _TZ3000_riwp3k79 / TS0505A
 
 - Livarno Lux RGB Spot GU10
-    _TZ3000_kdpxju99 / TS0505A (Lidl)
+    _TZ3000_kdpxju99 / TS0505A
 
 - Livarno Lux RGB Spot GardenLight
-   _TZ3000_h1jnz6l8 / TS0505A (Lidl)
+   _TZ3000_h1jnz6l8 / TS0505A
     
 - Livarno Lux Tunable Bulb E14
-    _TZ3000_oborybow / TS0502A (Lidl)
+    _TZ3000_oborybow / TS0502A
 
 - Livarno Lux Tunable Bulb E27
-    _TZ3000_49qchf10 / TS0502A (Lidl)
+    _TZ3000_49qchf10 / TS0502A
 
 - Livarno Lux Tunable Spot GU10
-    _TZ3000_el5kt5im / TS0502A (Lidl)
+    _TZ3000_el5kt5im / TS0502A
+
+- Livarno Lux Mood Light
+    _TZ3000_9cpuaca6 / TS0505A
+
+- Livarno Lux Light Bar
+    _TZ3000_gek6snaj / TS0505A
 
 - Melinera Christmas Lights
-    _TZE200_s8gkrkxk / TS0601 (Lidl)
+    _TZE200_s8gkrkxk / TS0601
 
 - SilverCrest Door / Windows Sensor
-    _TZ1800_ejwkn2h2 / TY0203 (Lidl)
+    _TZ1800_ejwkn2h2 / TY0203
     
 - SilverCrest Smart Motion Sensor
-   _TZ1800_fcdjzz3s / TY0202 (Lidl)
+   _TZ1800_fcdjzz3s / TY0202
 
 
 ## Christmas Lights

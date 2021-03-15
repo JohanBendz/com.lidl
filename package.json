@@ -1,6 +1,6 @@
 {
   "name": "com.lidl",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "main": "app.js",
   "devDependencies": {
     "homey": "^2.9.2"

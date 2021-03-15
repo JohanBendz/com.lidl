@@ -22,5 +22,8 @@
   },
   "0.1.9": {
     "en": "Fix for color white tunable (temperature) lights. Lights may have to be removed and paired again."
+  },
+  "0.1.10": {
+    "en": "Added support for Mood Light and Light Bar."
   }
 }
