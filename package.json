@@ -1,6 +1,6 @@
 {
   "name": "com.lidl",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Adds support for Lidl Zigbee devices to Homey",
   "main": "app.js",
   "keywords": [

@@ -1,6 +1,6 @@
 {
   "id": "com.lidl",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "compatibility": ">=5.0.0",
   "platforms": ["local", "cloud"],
   "sdk": 3,
@@ -62,6 +62,14 @@
       {
         "name": "Johan Bendz",
         "email": "johan_bendz@hotmail.com"
+      },
+      {
+        "name": "Martijn Aben",
+        "email": "lidl@escabe.org"
+      },
+      {
+        "name": "Jurgen Heine",
+        "email": "jurgen2.heine@gmail.com"
       }
     ]
   }
