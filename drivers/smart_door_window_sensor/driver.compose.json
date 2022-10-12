@@ -4,6 +4,8 @@
     "en": "SilverCrest Smart Door & Window Sensor (Lidl)"
   },
   "class": "sensor",
+  "platforms": ["local", "cloud"],
+  "connectivity": ["zigbee"],
   "capabilities": [
     "measure_battery",
     "alarm_contact",

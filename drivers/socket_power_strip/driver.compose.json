@@ -3,23 +3,13 @@
   "name": {
     "en": "SilverCrest 3 Socket Power Strip"
   },
-  "class": "socket",
-  "capabilities": [
-    "onoff"
-  ],
-  "capabilitiesOptions": {
-    "measure_power": {
-      "approximated": true
-    }
-  },
-  "images": {
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "small": "{{driverAssetsPath}}/images/small.png"
-  },
+  "$extends": ["plug"],
   "zigbee": {
     "manufacturerName": [
       "_TZ3000_1obwwnmq",
-      "_TZ3000_vzopcetz"
+      "_TZ3000_vzopcetz",
+      "_TZ3000_4uf3d0ax",
+      "_TZ3000_wzauvbcs"
     ],
     "productId": [
       "TS011F"
@@ -41,6 +31,8 @@
     "devices": {
       "socket2": {
         "class": "socket",
+        "platforms": ["local", "cloud"],
+        "connectivity": ["zigbee"],
         "capabilities": ["onoff"],
         "name": {
           "en": "Power Strip Socket 2"
@@ -54,6 +46,8 @@
       },
       "socket3": {
         "class": "socket",
+        "platforms": ["local", "cloud"],
+        "connectivity": ["zigbee"],
         "capabilities": ["onoff"],
         "name": {
           "en": "Power Strip Socket 3"

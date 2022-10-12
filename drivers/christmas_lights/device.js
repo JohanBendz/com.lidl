@@ -1,16 +1,14 @@
 'use strict';
 
-const { ZigBeeDevice } = require('homey-zigbeedriver');
-const { Cluster, debug, CLUSTER } = require('zigbee-clusters');
-const TuyaSpecificCluster = require('../../lib/TuyaSpecificCluster')
+const { Cluster } = require('zigbee-clusters');
+const TuyaSpecificCluster = require('../../lib/TuyaSpecificCluster');
+const TuyaSpecificClusterDevice = require("../../lib/TuyaSpecificClusterDevice");
 
 Cluster.addCluster(TuyaSpecificCluster);
 
-class christmas_lights extends ZigBeeDevice {
-    zclNode;
+class christmas_lights extends TuyaSpecificClusterDevice {
 
     async onNodeInit({ zclNode }) {
-        this.zclNode = zclNode;
         
         this.printNode();
 
@@ -78,7 +76,7 @@ class christmas_lights extends ZigBeeDevice {
         rainbow: '02',
         snake: '03',
         twinkle: '04',
-        firework: '08',
+        firework: '05',
         horizontal_flag: '06',
         waves: '07',
         updown: '08',
@@ -107,7 +105,7 @@ class christmas_lights extends ZigBeeDevice {
         return this.writeString(6,es);
     }
 
-    //region String Helper Functions
+    // String Helper Functions
     make4String(v) {
         let s = Math.round(v).toString(16);
         if(s.length===4) return s;
@@ -116,68 +114,6 @@ class christmas_lights extends ZigBeeDevice {
         else if(s.length===1) return '000' + s;
         else return '0000';
     }
-    //endregion
-
-    //region Tuya Datapoint Functions
-    _transactionID = 0;
-    set transactionID(val) {
-        this._transactionID = val % 256;
-    }
-    get transactionID() {
-        return this._transactionID;
-    }
-
-    async writeBool(dp, value) {
-        const data = Buffer.alloc(1);
-        data.writeUInt8(value ? 0x01 : 0x00,0);
-        return this.zclNode.endpoints[1].clusters.tuya.datapoint({
-            status: 0,
-            transid: this.transactionID++,
-            dp,
-            datatype: 1,
-            length: 1,
-            data
-        });
-    }
-
-    async writeEnum(dp, value) {
-        const data = Buffer.alloc(1);
-        data.writeUInt8(value, 0);
-        return this.zclNode.endpoints[1].clusters.tuya.datapoint({
-            status: 0,
-            transid: this.transactionID++,
-            dp,
-            datatype: 4,
-            length: 1,
-            data
-        });
-    }
-
-    async writeData32 (dp, value) {
-        const data = Buffer.alloc(4);
-        data.writeUInt32BE(value,0);
-        return this.zclNode.endpoints[1].clusters.tuya.datapoint({
-            status: 0,
-            transid: this.transactionID++,
-            dp,
-            datatype: 2,
-            length: 4,
-            data
-        });
-    }
-
-    async writeString(dp, value) {
-        const data = Buffer.from(String(value),'latin1');
-        return this.zclNode.endpoints[1].clusters.tuya.datapoint({
-            status: 0,
-            transid: this.transactionID++,
-            dp,
-            datatype: 3,
-            length: value.length,
-            data
-        });
-    }
-    //endregion
 
     onDeleted(){
 		this.log("Christmas Lights removed")

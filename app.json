@@ -1,8 +1,12 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.lidl",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "compatibility": ">=5.0.0",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
   "sdk": 3,
   "name": {
     "en": "Lidl Smart Home"
@@ -28,12 +32,20 @@
     ]
   },
   "category": [
-    "lights"
+    "lights",
+    "security",
+    "appliances"
   ],
   "brandColor": "#0050AA",
   "permissions": [
     "homey:wireless:zigbee"
   ],
+  "homeyCommunityTopicId": 26439,
+  "source": "https://github.com/JohanBendz/com.lidl",
+  "support": "mailto:johan_bendz@hotmail.com",
+  "bugs": {
+    "url": "https://github.com/JohanBendz/com.lidl/issues"
+  },
   "images": {
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"
@@ -54,10 +66,6 @@
       {
         "name": "Johan Bendz",
         "email": "johan_bendz@hotmail.com"
-      },
-      {
-        "name": "Martijn Aben",
-        "email": "lidl@escabe.org"
       }
     ]
   },
@@ -66,6 +74,9 @@
       {
         "title": {
           "en": "Start effect"
+        },
+        "titleFormatted": {
+          "en": "Effect is [[effect_name]] with speed [[effect_speed]] and color(s) [[effect_color_0]], [[effect_color_1]], [[effect_color_2]], [[effect_color_3]], [[effect_color_4]], [[effect_color_5]], [[effect_color_6]], [[effect_color_7]], [[effect_color_8]]"
         },
         "hint": {
           "en": "Choose a light pattern and a speed for it. You can also choose what colors the pattern should have, this is not mandatory."
@@ -194,39 +205,66 @@
           },
           {
             "type": "color",
-            "name": "effect_color_0"
+            "name": "effect_color_0",
+            "title": {
+              "en": "color 0"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_1"
+            "name": "effect_color_1",
+            "title": {
+              "en": "color 1"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_2"
+            "name": "effect_color_2",
+            "title": {
+              "en": "color 2"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_3"
+            "name": "effect_color_3",
+            "title": {
+              "en": "color 3"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_4"
+            "name": "effect_color_4",
+            "title": {
+              "en": "color 4"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_5"
+            "name": "effect_color_5",
+            "title": {
+              "en": "color 5"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_6"
+            "name": "effect_color_6",
+            "title": {
+              "en": "color 6"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_7"
+            "name": "effect_color_7",
+            "title": {
+              "en": "color 7"
+            }
           },
           {
             "type": "color",
-            "name": "effect_color_8"
+            "name": "effect_color_8",
+            "title": {
+              "en": "color 8"
+            }
           }
         ],
         "id": "start_effect"
@@ -240,6 +278,13 @@
         "en": "Melinera Christmas Lights"
       },
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -286,26 +331,77 @@
       }
     },
     {
-      "id": "plug",
-      "name": {
-        "en": "SilverCrest Smart Plug without metering"
-      },
       "class": "socket",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff"
       ],
-      "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
+      "images": {
+        "large": "/drivers/outdoor_plug/assets/images/large.png",
+        "small": "/drivers/outdoor_plug/assets/images/small.png"
+      },
+      "id": "outdoor_plug",
+      "name": {
+        "en": "Silvercrest Outdoor Plug without metering"
+      },
+      "zigbee": {
+        "manufacturerName": [
+          "_TZ3000_pnzfdr9y"
+        ],
+        "productId": [
+          "TS0101"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6
+            ],
+            "bindings": [
+              6
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Press and hold down on/off switch for aprox 5 seconds until the LED blinks rapidly."
+          }
         }
       },
+      "settings": []
+    },
+    {
+      "class": "socket",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "capabilities": [
+        "onoff"
+      ],
       "images": {
         "large": "/drivers/plug/assets/images/large.png",
         "small": "/drivers/plug/assets/images/small.png"
       },
+      "id": "plug",
+      "name": {
+        "en": "SilverCrest Smart Plug without metering"
+      },
       "zigbee": {
         "manufacturerName": [
-          "_TZ3000_kdi2o9m6"
+          "_TZ3000_kdi2o9m6",
+          "_TZ3000_plyvnuf5"
         ],
         "productId": [
           "TS011F"
@@ -333,6 +429,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -396,6 +499,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -459,6 +569,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -522,6 +639,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -585,6 +709,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -648,6 +779,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -711,6 +849,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -778,6 +923,13 @@
         "en": "SilverCrest Smart Door & Window Sensor (Lidl)"
       },
       "class": "sensor",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "measure_battery",
         "alarm_contact",
@@ -846,6 +998,13 @@
         "en": "SilverCrest Smart Motion Sensor (Lidl)"
       },
       "class": "sensor",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "measure_battery",
         "alarm_motion",
@@ -908,27 +1067,31 @@
       ]
     },
     {
-      "id": "socket_power_strip",
-      "name": {
-        "en": "SilverCrest 3 Socket Power Strip"
-      },
       "class": "socket",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff"
       ],
-      "capabilitiesOptions": {
-        "measure_power": {
-          "approximated": true
-        }
-      },
       "images": {
         "large": "/drivers/socket_power_strip/assets/images/large.png",
         "small": "/drivers/socket_power_strip/assets/images/small.png"
       },
+      "id": "socket_power_strip",
+      "name": {
+        "en": "SilverCrest 3 Socket Power Strip"
+      },
       "zigbee": {
         "manufacturerName": [
           "_TZ3000_1obwwnmq",
-          "_TZ3000_vzopcetz"
+          "_TZ3000_vzopcetz",
+          "_TZ3000_4uf3d0ax",
+          "_TZ3000_wzauvbcs"
         ],
         "productId": [
           "TS011F"
@@ -969,6 +1132,13 @@
         "devices": {
           "socket2": {
             "class": "socket",
+            "platforms": [
+              "local",
+              "cloud"
+            ],
+            "connectivity": [
+              "zigbee"
+            ],
             "capabilities": [
               "onoff"
             ],
@@ -984,6 +1154,13 @@
           },
           "socket3": {
             "class": "socket",
+            "platforms": [
+              "local",
+              "cloud"
+            ],
+            "connectivity": [
+              "zigbee"
+            ],
             "capabilities": [
               "onoff"
             ],
@@ -1008,6 +1185,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -1068,6 +1252,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",
@@ -1128,6 +1319,13 @@
     },
     {
       "class": "light",
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
       "capabilities": [
         "onoff",
         "dim",

@@ -2,12 +2,33 @@
 Adds support for Lidl Smart Home Devices
 
 ## Supported devices:
+
+Sensors
+
+- SilverCrest Door / Windows Sensor
+    _TZ1800_ejwkn2h2 / TY0203
+    
+- SilverCrest Smart Motion Sensor
+   _TZ1800_fcdjzz3s / TY0202
+
+
+Plugs and Socket Strips
+
 - SilverCrest Smart Plug, without metering
     _TZ3000_kdi2o9m6 / TS011F
+    _TZ3000_plyvnuf5 / TS011F
 
 - SilverCrest 3 Socket Power Strip
     _TZ3000_1obwwnmq / TS011F
     _TZ3000_vzopcetz / TS011F
+    _TZ3000_4uf3d0ax / TS011F
+    _TZ3000_wzauvbcs / TS011F
+
+- Silvercrest Outdoor Plug, without metering
+    _TZ3000_pnzfdr9y / TS0101
+
+
+Lights
 
 - Livarno Lux RGB Bulb E14
     _TZ3000_odygigth / TS0505A
@@ -41,12 +62,6 @@ Adds support for Lidl Smart Home Devices
 
 - Melinera Christmas Lights
     _TZE200_s8gkrkxk / TS0601
-
-- SilverCrest Door / Windows Sensor
-    _TZ1800_ejwkn2h2 / TY0203
-    
-- SilverCrest Smart Motion Sensor
-   _TZ1800_fcdjzz3s / TY0202
 
 
 ## Christmas Lights

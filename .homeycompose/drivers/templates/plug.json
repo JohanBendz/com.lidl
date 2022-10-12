@@ -1,20 +1,10 @@
 {
-    "class": "light",
+    "class": "socket",
     "platforms": ["local", "cloud"],
     "connectivity": ["zigbee"],
     "capabilities": [
-      "onoff",
-      "dim",
-      "light_hue",
-      "light_saturation",
-      "light_temperature",
-      "light_mode"
+      "onoff"
     ],
-    "capabilitiesOptions": {
-      "onoff": {
-        "setOnDim": false
-      }
-    },
     "images": {
       "large": "{{driverAssetsPath}}/images/large.png",
       "small": "{{driverAssetsPath}}/images/small.png"

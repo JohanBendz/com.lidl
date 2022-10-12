@@ -4,6 +4,8 @@
       "en": "SilverCrest Smart Motion Sensor (Lidl)"
     },
     "class": "sensor",
+    "platforms": ["local", "cloud"],
+    "connectivity": ["zigbee"],
     "capabilities": [
       "measure_battery",
       "alarm_motion",

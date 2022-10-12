@@ -1,5 +1,7 @@
 {
     "class": "light",
+    "platforms": ["local", "cloud"],
+    "connectivity": ["zigbee"],
     "capabilities": [
       "onoff",
       "dim",

@@ -1,16 +1,15 @@
 {
-  "id": "plug",
+  "id": "outdoorplug",
   "name": {
-    "en": "SilverCrest Smart Plug without metering"
+    "en": "Silvercrest Outdoor Plug without metering"
   },
   "$extends": ["plug"],
   "zigbee": {
     "manufacturerName": [
-      "_TZ3000_kdi2o9m6",
-      "_TZ3000_plyvnuf5"
+      "_TZ3000_pnzfdr9y"
     ],
     "productId": [
-      "TS011F"
+      "TS0101"
     ],
     "endpoints": {
       "1": {

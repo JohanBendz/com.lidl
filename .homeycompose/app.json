@@ -1,7 +1,8 @@
 {
   "id": "com.lidl",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "compatibility": ">=5.0.0",
+  "platforms": ["local", "cloud"],
   "sdk": 3,
   "name": {
     "en": "Lidl Smart Home"
@@ -27,19 +28,27 @@
     ]
   },
   "category": [
-    "lights"
+    "lights",
+    "security",
+    "appliances"
   ],
   "brandColor": "#0050AA",
   "permissions": [
     "homey:wireless:zigbee"
   ],
+  "homeyCommunityTopicId": 26439,
+  "source": "https://github.com/JohanBendz/com.lidl",
+  "support": "mailto:homey@bortbytt.se",
+  "bugs": {
+    "url": "https://github.com/JohanBendz/com.lidl/issues"
+  },
   "images": {
     "large": "/assets/images/large.png",
     "small": "/assets/images/small.png"
   },
   "author": {
-    "name": "Johan Bendz",
-    "email": "johan_bendz@hotmail.com"
+    "name": "Bortbytt Software",
+    "email": "homey@bortbytt.se"
   },
   "contributing": {
     "donate": {
@@ -53,10 +62,6 @@
       {
         "name": "Johan Bendz",
         "email": "johan_bendz@hotmail.com"
-      },
-      {
-        "name": "Martijn Aben",
-        "email": "lidl@escabe.org"
       }
     ]
   }

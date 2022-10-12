@@ -1,13 +1,16 @@
 {
   "name": "com.lidl",
-  "version": "0.1.10",
+  "version": "0.2.0",
+  "description": "Adds support for Lidl Zigbee devices to Homey",
   "main": "app.js",
-  "devDependencies": {
-    "homey": "^2.9.2"
-  },
+  "keywords": [
+    "Lidl",
+    "Zigbee"
+  ],
+  "author": "Johan Bendz",
+  "license": "MIT",
   "dependencies": {
-    "homey-meshdriver": "^2.0.2",
-    "homey-zigbeedriver": "^1.6.2",
-    "zigbee-clusters": "^1.4.0"
+    "homey-zigbeedriver": "^1.6.12",
+    "zigbee-clusters": "^1.5.2"
   }
 }

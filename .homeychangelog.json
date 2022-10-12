@@ -25,5 +25,8 @@
   },
   "0.1.10": {
     "en": "Added support for Mood Light and Light Bar."
+  },
+  "0.2.0": {
+    "en": "Added support for Homey Bridge. Updated Zigbee driver. Added support for Outdoor plug and additional versions of a few already added devices."
   }
 }
