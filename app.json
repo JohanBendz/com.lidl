@@ -42,7 +42,7 @@
   ],
   "homeyCommunityTopicId": 26439,
   "source": "https://github.com/JohanBendz/com.lidl",
-  "support": "mailto:johan_bendz@hotmail.com",
+  "support": "mailto:homey@bortbytt.se",
   "bugs": {
     "url": "https://github.com/JohanBendz/com.lidl/issues"
   },
@@ -51,8 +51,8 @@
     "small": "/assets/images/small.png"
   },
   "author": {
-    "name": "Johan Bendz",
-    "email": "johan_bendz@hotmail.com"
+    "name": "Bortbytt Software",
+    "email": "homey@bortbytt.se"
   },
   "contributing": {
     "donate": {
