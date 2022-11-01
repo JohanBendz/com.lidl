@@ -7,14 +7,15 @@
   "zigbee": {
     "manufacturerName": [
       "_TZ3000_kdi2o9m6",
-      "_TZ3000_plyvnuf5"
+      "_TZ3000_plyvnuf5",
+	  "_TZ3000_wamqdr3f"
     ],
     "productId": [
       "TS011F"
     ],
     "endpoints": {
       "1": {
-        "clusters": [0, 4, 5, 6],
+        "clusters": [0, 3, 4, 5, 6],
         "bindings": [6]
       }
     },
