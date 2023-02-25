@@ -7,6 +7,10 @@ class socket_power_strip extends ZigBeeDevice {
 		
 	async onNodeInit({zclNode}) {
 
+        if (!this.isSubDevice()) {
+          await zclNode.endpoints[1].clusters.basic.readAttributes('manufacturerName', 'zclVersion', 'appVersion', 'modelId', 'powerSource', 'attributeReportingStatus');
+        }
+
         const { subDeviceId } = this.getData();
         this.log("Device data: ", subDeviceId);
 
